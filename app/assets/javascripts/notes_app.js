@@ -5,7 +5,6 @@ window.NotesApp = {
   Routers: {},
   initialize: function() {
     new NotesApp.Views.NotesView();
-    console.log('here');
   }
 };
 

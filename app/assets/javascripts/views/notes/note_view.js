@@ -1,7 +1,8 @@
 NotesApp.Views.NoteView = Backbone.View.extend({
 
   className: 'col-md-12 note',
-  template: _.template( $('#note-template').html() ),
+  template: JST['notes/note-template'],
+  id: 'note-template',
 
   events: {
     'click .delete-note' : 'deleteNote',
