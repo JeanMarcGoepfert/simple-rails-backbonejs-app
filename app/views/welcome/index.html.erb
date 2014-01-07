@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Create Some Notes</h1>
+    <hr>
+    <form role="form" id="note-form">
+        <div class="form-group">
+            <input type="email" class="form-control" id="title" placeholder="Title">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="5" id="details" placeholder="Details"></textarea>
+        </div>
+        <button id="add-note" type="button" class="btn btn-primary btn-lg btn-block">Create a Note</button>
+    </form>
+    <hr>
+    <div class="row" id="notes"></div>
+</div>
+
+<script id="note-template" type="text/template">
+    <div class="row">
+        <div class="col-md-9 text">
+            <h4><%%= title %></h4>
+            <p><%%= details %></p>
+        </div>
+        <div class="col-md-2 col-md-offset-1">
+            <a href="#" class="btn btn-default btn-block edit-note">Edit Note</a>
+            <a href="#" class="btn btn-danger btn-block delete-note " >Delete Note</a>
+        </div>
+    </div>
+    <hr>
+</script>
+
+<script id="edit-note" type="text/template">
+    <div class="form-group">
+        <input type="text" value="<%%= title %>" class="form-control" id="title">
+    </div>
+    <div class="form-group">
+        <textarea rows="2" class="form-control" id="details"><%%= details %></textarea>
+    </div>
+</script>

@@ -1,5 +1,6 @@
 NotesApp.Collections.Notes = Backbone.Collection.extend({
 
-  model: NotesApp.Models.Note
+  model: NotesApp.Models.Note,
 
+  url: '/notes'
 });

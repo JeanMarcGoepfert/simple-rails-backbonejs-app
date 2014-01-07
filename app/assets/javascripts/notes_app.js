@@ -4,7 +4,8 @@ window.NotesApp = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+    new NotesApp.Views.NotesView();
+    console.log('here');
   }
 };
 
