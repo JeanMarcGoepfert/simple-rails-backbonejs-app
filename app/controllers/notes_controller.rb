@@ -17,7 +17,6 @@ class NotesController < ApplicationController
   def destroy
     @note = Note.find(params[:id])
     @note.destroy
-    respond_with @note
   end
 
   def update
